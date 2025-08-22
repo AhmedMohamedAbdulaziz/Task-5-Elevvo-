@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudSync - Effortless Cloud Collaboration</title>
+  <meta name="description" content="CloudSync - Effortless Cloud Collaboration for Modern Teams">
+  <meta name="keywords" content="cloud, SaaS, collaboration, productivity, team, sync">
+  <meta name="author" content="CloudSync">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2601.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4b8b0b6b2b.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-white text-gray-900 transition-colors duration-300" id="body">
+  <!-- Theme Toggle Button -->
+  <div class="fixed top-4 right-4 z-50">
+    <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+      <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
+  </div>
+  <!-- Main Content -->
+  <div id="main-content">
+    <!-- Hero Section -->
+    <section class="relative flex flex-col items-center justify-center text-center py-24 px-4 min-h-[70vh] bg-gradient-to-br from-blue-600 via-indigo-500 to-purple-600 overflow-hidden">
+      <!-- Animated SVG shapes -->
+      <svg class="absolute top-0 left-0 w-40 h-40 opacity-30 animate-spin-slow" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="#fff"/></svg>
+      <svg class="absolute bottom-0 right-0 w-32 h-32 opacity-20 animate-pulse" viewBox="0 0 200 200"><rect x="30" y="30" width="140" height="140" rx="40" fill="#fff"/></svg>
+      <div class="relative z-10 flex flex-col items-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg" style="font-family: 'Poppins', sans-serif;">CloudSync</h1>
+        <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl" style="font-family: 'Poppins', sans-serif;">Effortless Cloud Collaboration for Modern Teams</p>
+        <button class="bg-white text-blue-700 px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:scale-105 hover:bg-blue-50 transition-transform duration-300 animate-bounce">Get Started Free</button>
+        <!-- Product Illustration -->
+        <div class="mt-12">
+          <svg width="320" height="180" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="30" width="300" height="120" rx="24" fill="#fff"/>
+            <rect x="30" y="50" width="80" height="20" rx="6" fill="#e0e7ff"/>
+            <rect x="30" y="80" width="180" height="16" rx="5" fill="#c7d2fe"/>
+            <rect x="30" y="110" width="120" height="16" rx="5" fill="#c7d2fe"/>
+            <circle cx="260" cy="70" r="18" fill="#6366f1"/>
+            <circle cx="260" cy="110" r="12" fill="#818cf8"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section (Tabbed) -->
+    <section class="py-16 px-4 max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Features</h2>
+      <div>
+        <!-- Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8" id="feature-tabs">
+          <button class="tab-btn px-4 py-2 rounded-full font-semibold bg-blue-100 text-blue-700 dark:bg-gray-700 dark:text-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-transform duration-200 hover:scale-105 hover:shadow-lg" data-tab="0">Real-Time Sync</button>
+          <button class="tab-btn px-4 py-2 rounded-full font-semibold text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-transform duration-200 hover:scale-105 hover:shadow-lg" data-tab="1">Secure Storage</button>
+          <button class="tab-btn px-4 py-2 rounded-full font-semibold text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-transform duration-200 hover:scale-105 hover:shadow-lg" data-tab="2">Mobile Access</button>
+          <button class="tab-btn px-4 py-2 rounded-full font-semibold text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-transform duration-200 hover:scale-105 hover:shadow-lg" data-tab="3">Automated Backups</button>
+          <button class="tab-btn px-4 py-2 rounded-full font-semibold text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-transform duration-200 hover:scale-105 hover:shadow-lg" data-tab="4">Team Management</button>
+          <button class="tab-btn px-4 py-2 rounded-full font-semibold text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-transform duration-200 hover:scale-105 hover:shadow-lg" data-tab="5">Integrations</button>
+        </div>
+        <!-- Tab Content -->
+        <div id="feature-content" class="bg-white dark:bg-gray-800 rounded-lg shadow p-8 flex flex-col items-center text-center min-h-[220px] transition-opacity duration-500 opacity-0 will-change-opacity">
+          <!-- Content will be injected by JS -->
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section (Carousel) -->
+    <section class="py-16 px-4 bg-gray-50 dark:bg-gray-900">
+      <h2 class="text-3xl font-bold text-center mb-10">What Our Users Say</h2>
+      <div class="flex justify-center items-center gap-6 max-w-xl mx-auto">
+        <button id="testimonial-prev" aria-label="Previous testimonial" class="p-2 rounded-full bg-white dark:bg-gray-800 shadow hover:bg-blue-100 dark:hover:bg-gray-700 transition"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg></button>
+        <div id="testimonial-card" class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 flex flex-col items-center text-center min-w-[280px] max-w-[340px] transition-all duration-500 opacity-0 translate-x-4">
+          <!-- Testimonial content will be injected by JS -->
+        </div>
+        <button id="testimonial-next" aria-label="Next testimonial" class="p-2 rounded-full bg-white dark:bg-gray-800 shadow hover:bg-blue-100 dark:hover:bg-gray-700 transition"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+      <div class="flex justify-center mt-6 gap-2" id="testimonial-dots">
+        <!-- Dots will be injected by JS -->
+      </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="py-16 px-4 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Pricing</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center border-2 border-blue-100 dark:border-gray-700 transition-transform duration-300 hover:scale-105 hover:cursor-pointer hover:shadow-2xl">
+          <h3 class="font-semibold text-xl mb-2">Free</h3>
+          <p class="text-3xl font-bold mb-4">$0<span class="text-base font-normal">/mo</span></p>
+          <ul class="mb-6 text-gray-600 dark:text-gray-300">
+            <li>✔ 5 GB Storage</li>
+            <li>✔ Basic Support</li>
+            <li>✔ Mobile Access</li>
+          </ul>
+          <button class="bg-blue-100 text-blue-700 px-6 py-2 rounded-full font-semibold hover:bg-blue-200 transition">Start Free</button>
+        </div>
+        <div class="relative bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-10 flex flex-col items-center border-4 border-blue-600 ring-4 ring-blue-300/30 dark:ring-blue-800/40 scale-105 z-10 transition-transform duration-300 hover:scale-110 hover:cursor-pointer hover:shadow-2xl">
+          <span class="absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg animate-pulse">Most Popular</span>
+          <h3 class="font-semibold text-xl mb-2">Pro</h3>
+          <p class="text-3xl font-bold mb-4">$12<span class="text-base font-normal">/mo</span></p>
+          <ul class="mb-6 text-gray-600 dark:text-gray-300">
+            <li>✔ 1 TB Storage</li>
+            <li>✔ Priority Support</li>
+            <li>✔ Advanced Security</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-200">Go Pro</button>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center border-2 border-blue-100 dark:border-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+          <h3 class="font-semibold text-xl mb-2">Enterprise</h3>
+          <p class="text-3xl font-bold mb-4">Custom</p>
+          <ul class="mb-6 text-gray-600 dark:text-gray-300">
+            <li>✔ Unlimited Storage</li>
+            <li>✔ Dedicated Manager</li>
+            <li>✔ Custom Integrations</li>
+          </ul>
+          <button class="bg-blue-100 text-blue-700 px-6 py-2 rounded-full font-semibold hover:bg-blue-200 transition">Contact Sales</button>
+        </div>
+      </div>
+    </section>
+    <!-- Call-to-Action Section -->
+    <section class="py-16 px-4 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to boost your team's productivity?</h2>
+      <p class="mb-6 text-lg">Sign up now and start collaborating in the cloud for free!</p>
+      <form class="flex flex-col md:flex-row justify-center items-center gap-4 max-w-xl mx-auto mb-4">
+        <input type="email" placeholder="Enter your email" class="px-6 py-3 rounded-full text-gray-900 w-full md:w-auto text-lg focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+        <button type="submit" class="bg-white text-blue-700 px-10 py-3 rounded-full font-bold text-lg shadow-lg hover:bg-blue-100 hover:scale-105 transition-transform duration-200">Get Started</button>
+      </form>
+      <div class="flex flex-col items-center gap-2">
+        <span class="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm font-semibold shadow-md"><svg class="w-5 h-5 text-green-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> No credit card required</span>
+        <span class="text-xs text-white/80">Trusted by 1,000+ teams worldwide</span>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
